@@ -95,11 +95,20 @@ function custom_query_for_category_blog() {
 }
 
 // QUERY POST OF CATEGORY お知らせ POST TYPE NEW FUNCTION
-function custom_query_for_category_notice() {
+// function custom_query_for_category_notice() {
+//     $args = array(
+//         'post_type' => 'new',
+//         'category_name' => 'notice',
+//         'posts_per_page' => 3
+//     );
+//     $query = new WP_Query($args);
+//     return $query;
+// }
+function custom_query_for_category_notice($mode = 'limited') {
     $args = array(
         'post_type' => 'new',
         'category_name' => 'notice',
-        'posts_per_page' => 3
+        'posts_per_page' => ($mode === 'limited') ? 3 : -1
     );
     $query = new WP_Query($args);
     return $query;

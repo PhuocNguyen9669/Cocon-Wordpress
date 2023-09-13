@@ -195,6 +195,48 @@ ul.ul-image li img:hover {
     display: none;
 }
 
+/* New Archive */
+#container .notice_archive {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr.notice_list:hover {
+    opacity: 0.5;
+}
+
+td.date {
+    text-align: center;
+    padding: 8px;
+}
+
+td.desscription {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    color: rgb(252, 150, 33);
+}
+
+tr.notice_list {
+    cursor: pointer;
+    border-bottom: 1px solid rgb(252, 150, 33);
+}
+
+.content-new-archive {
+    padding: 50px;
+    width: 70%;
+    margin: 0 auto 100px;
+    border: 3px solid rgb(252, 150, 33);
+}
 @media only  screen and (max-width: 1365px) {
 
     ul.ul-image li img {

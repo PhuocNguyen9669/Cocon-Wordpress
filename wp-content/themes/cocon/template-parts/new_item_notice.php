@@ -1,4 +1,4 @@
-<?php $query_notice = custom_query_for_category_notice(); ?>
+<?php $query_notice = custom_query_for_category_notice('limited'); ?>
 <div class="notification-message">
     <!-- Notice Start -->
     <div class="notice-alt">
@@ -23,7 +23,7 @@
             </ul>
         </div>
         <div class="a-notice">
-            <a href="<?php echo get_category_link(get_cat_ID('学び')); ?>">もっと見る</a>
+            <a href="<?php echo get_post_type_archive_link('new'); ?>">もっと見る</a>
         </div>
     </div>
 </div>
