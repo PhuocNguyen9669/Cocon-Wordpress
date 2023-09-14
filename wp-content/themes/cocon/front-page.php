@@ -7,6 +7,3 @@
 <?php get_template_part('template-parts/new-item'); ?>
 
 <?php get_footer(); ?>
-</body>
-
-</html>

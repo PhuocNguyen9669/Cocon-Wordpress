@@ -1,4 +1,5 @@
 <!-- Footer Start -->
+<?php //wp_footer(); ?>
 <div class="menu-footer">
     <ul class="menu-list">
         <li class="menu-item">
@@ -33,3 +34,5 @@
 </div>
 <!-- Footer End -->
 </div>
+</body>
+</html>
